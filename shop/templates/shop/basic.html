@@ -35,12 +35,18 @@
       </li>
 
       <li class="nav-item">
-        <a class="nav-link" href="/blog">Blog</a>
-      </li>
-
-       <li class="nav-item">
         <a class="nav-link" href="/shop/contact">Contact Us</a>
       </li>
+      <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Hello {{request.user}}</a>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="/shop/profile">My Profile</a>
+      <a class="dropdown-item" href="#">Setting</a>
+
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="/shop/handlelogout">Log Out</a>
+    </div>
+  </li>
 
 
     </ul>
